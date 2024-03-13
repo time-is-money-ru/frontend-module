@@ -1,0 +1,35 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+  width: fit-content;
+}
+form {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+label {
+  display: block;
+  margin-top: 16px;
+}
+button {
+  margin: 50px;
+  background-color: deepskyblue;
+  width: fit-content;
+  box-shadow: none;
+  border: none;
+  padding: 16px;
+}
+button[type=submit] {
+  background-color: greenyellow;
+}
+span {
+  align-self: flex-start;
+  font-size: 24px;
+  color: deepskyblue;
+}

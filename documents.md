@@ -1,0 +1,323 @@
+
+# Актуальный список документов
+**passport - Паспорт РФ**
+- last_name: Фамилия
+- first_name: Имя
+- patronymic: Отчество
+- sex: Пол
+- birth_date: Дата рождения
+- birthplace: Место рождения
+- series: Серия
+- number: Номер
+- department_name: Паспорт выдан
+- issue_date: Дата выдачи
+- department_number: Код подразделения
+- registration_address: Адрес регистрации
+--- 
+**international_passport - Загран паспорт**
+- last_name: Фамилия
+- first_name: Имя
+- patronymic: Отчество
+- last_name_latin: Фамилия латиницей
+- first_name_latin: Имя латиницей
+- birth_date: Дата рождения
+- sex: Пол
+- birthplace: Место рождения
+- citizenship: Гражданство
+- series: Серия
+- number: Номер
+- issue_date: Дата выдачи
+- expiration_date: Дата окончания срока
+- department_name: Орган выдавший
+--- 
+**birth_certificate - Свидетельство о рождении**
+- last_name: Фамилия
+- first_name: Имя
+- patronymic: Отчество
+- birth_date: Дата рождения
+- birthplace: Место рождения
+- act_date: Дата составления акта
+- act_number: Номер записи акта
+- father_last_name: Отец - Фамилия
+- father_first_name: Отец - Имя
+- father_patronymic: Отец - Отчество
+- father_citizenship: Отец - Гражданство
+- mother_last_name: Мать - Фамилия
+- mother_first_name: Мать - Имя
+- mother_patronymic: Мать - Отчество
+- mother_citizenship: Мать - Гражданство
+- act_place: Место государственной регистрации
+- issue_date: Дата выдачи
+- certificate_series: Серия свидетельства
+- certificate_number: Номер свидетельства
+--- 
+**military_card - Военный билет**
+- last_name: Фамилия
+- first_name: Имя
+- patronymic: Отчество
+- birthday: Дата рождения
+- series: Серия
+- number: Номер
+- issue_place: Место выдачи
+- issue_date: Дата выдачи
+- issue_rank: Звание того кто выдал
+- assigner: Кем присвоено
+- order_number: Номер приказа
+- order_date: Дата приказа
+- specialty: Специальность: номер ВУС, Код ВУС, наименование должности
+- stock_category: Категория запаса
+- accounting_group: Группа учета
+- structure: Состав
+- med_surveys: Мед освидетельствования
+--- 
+**pension_certificate - Пенсионное удостоверение**
+- last_name: Фамилия
+- first_name: Имя
+- patronymic: Отчество
+- birth_year: Год рождения
+- number: Номер
+- type: Тип
+- disability_group: Группа инвалидности
+--- 
+**drivers_license - Водительское удостоверение**
+- last_name: Фамилия
+- first_name: Имя
+- patronymic: Отчество
+- birth_date: Дата рождения
+- birthplace: Место рождения
+- issue_date: Дата выдачи
+- expiration_date: Дата окончания действия
+- department_name: Подразделение/кем выдано
+- number: Номер
+- category: Категории
+--- 
+**STS - Свидетельство о регистрации ТС**
+- last_name: Фамилия
+- last_name_latin: Фамилия латиницей
+- first_name: Имя
+- first_name_latin: Имя латиницей
+- patronymic: Отчество
+- registration_address: Адрес регистрации владельца
+- series: Серия
+- number: Номер
+- department_name: Кем выдано
+- issue_date: Дата выдачи
+- registration_mark: Регистрационный знак ТС
+- auto_model: Марка/модель
+- auto_type: Тип ТС
+- auto_category: Категория ТС
+- auto_issue_date: Год выпуска
+- chassis_number: Номер шасси
+- body_number: Номер кузова
+- color: Цвет
+- power: Мощность
+- environmental_class: Экологический класс
+- ptc_number: Серия номер ПТС
+- permitted_weight: Разрешенная масса
+- weight_without_load: Масса без нагрузки
+--- 
+**PTC - Паспорт Транспортного Средства**
+- series: Серия Номер
+- VIN: VIN
+- auto_model: Марка модель
+- auto_type: Тип ТС
+- auto_category: Категория
+- auto_issue_date: Год выпуска ТС
+- engine_number: Модель и номер двигателя
+- chassis_number: Номер шасси
+- body_number: Номер кузова
+- color: Цвет
+- engine_power: Мощность двигателя л.с. (кВт)
+- engine_displacement: Рабочий объем двигателя
+- engine_type: Тип двигателя
+- environmental_class: Экологический класс
+- permitted_weight: Разрешенная масса
+- weight_without_load: Масса без нагрузки
+- auto_manufacturer: Изготовитель ТС
+- type_approval_number: Одобрение типа Номер
+- type_approval_date: Одобрение типа дата
+- type_approval_department: Одобрение типа орган
+- export_country: Страна вывоза
+- TD_TPO_series: Серия ТД ТПО
+- TD_TPO_number: Номер ТД ТПО
+- customs_restrictions: Таможенные ограничения
+--- 
+**OSAGO - Полис ОСАГО**
+- series: Серия Номер
+- insurance_amount: Страховая сумма
+- issue_date: Действителен с….
+- expiration_date: Действителен до…
+- insurance_company_name: Название страховой компании
+- insurance_company_address: Адрес страховой компании
+--- 
+**KASKO - Полис КАСКО**
+- series: Серия Номер
+- issue_date: Срок действия с …
+- expiration_date: Срок действия до…
+- insurance_company: Страховая компания
+- insurance_amount: Страховая премия
+- driver_count: Число водителей
+--- 
+**INN - ИНН**
+- number: Номер
+--- 
+**snils - СНИЛС**
+- number: Номер
+--- 
+**marriage_certificate - Свидетельство о браке**
+- husband_last_name: Фамилия мужа
+- husband_first_name: Имя мужа
+- husband_patronymic: Отчество мужа
+- husband_citizenship: Гражданство мужа
+- husband_birthdate: Дата рождения мужа
+- husband_birthplace: Место рождения мужа
+- wife_last_name: Фамилия жены
+- wife_first_name: Имя жены
+- wife_patronymic: Отчество жены
+- wife_citizenship: Гражданство жены
+- wife_birthdate: Дата рождения жены
+- wife_birthplace: Место рождения жены
+- marriage_date: Дата заключения брака
+- act_date: Дата записи акта
+- act_number: Номер записи акта
+- new_husband_last_name: Новая фамилия мужа
+- new_wife_last_name: Новая фамилия жены
+- registration_place: Место гос регистрации
+- issue_date: Дата выдачи
+- series: Серия Номер
+--- 
+**divorce_certificate - Свидетельство о разводе**
+- husband_last_name: Фамилия мужа
+- husband_first_name: Имя мужа
+- husband_patronymic: Отчество мужа
+- husband_citizenship: Гражданство мужа
+- husband_birthdate: Дата рождения мужа
+- husband_birthplace: Место рождения мужа
+- wife_last_name: Фамилия жены
+- wife_first_name: Имя жены
+- wife_patronymic: Отчество жены
+- wife_citizenship: Гражданство жены
+- wife_birthdate: Дата рождения жены
+- wife_birthplace: Место рождения жены
+- divorce_date: Дата развода
+- reason: Основание
+- date_reason: Дата основания
+- act_date: Дата записи акта
+- act_number: Номер записи акта
+- new_last_name: Новая фамилия
+- applicant_last_name: Фамилия заявителя
+- applicant_first_name: Имя заявителя
+- applicant_patronymic: Отчество заявителя
+- registration_place: Место гос регистрации
+- issue_date: Дата выдачи
+- series: Серия Номер
+--- 
+**adoption_certificate - Свидетельство об усыновлении**
+- child_last_name: Фамилия ребёнка
+- child_first_name: Имя ребёнка
+- child_patronymic: Отчество ребёнка
+- child_birthdate: Дата рождения ребёнка
+- child_birthplace: Место рождения ребёнка
+- husband_last_name: Фамилия мужа
+- husband_first_name: Имя мужа
+- husband_patronymic: Отчество мужа
+- husband_citizenship: Гражданство мужа
+- wife_last_name: Фамилия жены
+- wife_first_name: Имя жены
+- wife_patronymic: Отчество жены
+- wife_citizenship: Гражданство жены
+- new_child_last_name: Новая Фамилия ребёнка
+- act_date: Дата записи акта
+- act_number: Номер записи акта
+- registration_place: Место гос регистрации
+- issue_date: Дата выдачи
+- series: Серия Номер
+--- 
+**OMC_policy - Полис ОМС**
+- policy_number: Номер полиса
+- validity: Срок действия
+- registration_date: Дата регистрации
+- insurance_company_name: Название страховой организации
+- insurance_company_address: Адрес организации
+- insurance_company_phone: Телефон организации
+- representative_name: ФИО представителя
+--- 
+**DMC_policy - Полис ДМС**
+- policy_number: Номер полиса
+- validity: Срок действия
+- insurance_company: Страховая компания
+--- 
+**disability_certificate - Справка об инвалидности**
+- department_name: Наименование организации
+- certificate_number: Серия Номер справки
+- last_name: Фамилия
+- first_name: Имя
+- patronymic: Отчество
+- birth_date: Дата рождения
+- registration_address: Адрес регистрации
+- disability_establishment_date: Дата установления инвалидности
+--- 
+**weapon_license - Лицензия на оружие**
+- model: Модель
+- caliber: Калибр
+- series: Серия
+- number: Номер
+- release_date: Год выпуска
+- issue_date: Дата выдачи
+- expiration_date: Действительно до…
+- department_name: Кем выдано
+--- 
+**hunting_ticket - Охотничий билет**
+- series: Серия
+- number: Номер
+- last_name: Фамилия
+- first_name: Имя
+- patronymic: Отчество
+- birth_date: Дата рождения
+- department_name: Кем выдан
+- issue_date: Дата выдачи
+--- 
+**ROH_license - Разрешение РОХа**
+- number: Номер
+- last_name: Фамилия
+- first_name: Имя
+- patronymic: Отчество
+- sex: Пол
+- registration_place: Место регистрации
+- model: Модель
+- caliber: Калибр
+- series: Серия
+- number: Номер
+- release_date: Год выпуска
+- issue_date: Дата выдачи
+- expiration_date: Действительно до…
+- department_name: Кем выдано
+--- 
+**photo - Хранилище фотографий**
+--- 
+**social - Контакты**
+- instagram: Инстаграм
+- VK: Вконтакте
+- twitter: Твиттер
+- odnoklassniki: Одноклассники
+- facebook: Фейсбук
+- email: E-Mail
+- phone_number: Телефон
+- whatsapp: Ватсапп
+--- 
+**actual_address - Фактический адрес проживания**
+- actual_address: Фактический адрес проживания
+--- 
+**education_document - Документ об образовании**
+- name_education_document: Наименование документа об образовании
+- last_name: Фамилия
+- first_name: Имя
+- patronymic: Отчество
+- series: Серия
+- number: Номер
+- department_name: Кем выдано
+- issue_date: Дата выдачи
+- registration_number: Регистрационный номер
+- qualification: Квалификация
+- specialty: Специальность
+--- 

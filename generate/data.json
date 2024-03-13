@@ -1,0 +1,3849 @@
+[
+  {
+    "id": 1,
+    "icon": "profile",
+    "title": "Удостоверения",
+    "description": "Паспорт РФ, загранпаспорт, свидетельство о рождении, военный билет, Пенсионное удостоверение",
+    "listDocuments": [
+      {
+        "id": 1,
+        "idServer": "passport",
+        "title": "Паспорт РФ",
+        "fields": [
+          {
+            "id": 1,
+            "idServer": "last_name",
+            "title": "Фамилия",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 2,
+            "idServer": "first_name",
+            "title": "Имя",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 3,
+            "idServer": "patronymic",
+            "title": "Отчество",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 2,
+              "required": false
+            }
+          },
+          {
+            "id": 4,
+            "idServer": "sex",
+            "title": "Пол",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [
+                {
+                  "id": "М",
+                  "name": "Мужской"
+                },
+                {
+                  "id": "Ж",
+                  "name": "Женский"
+                }
+              ],
+              "type": 3,
+              "required": true
+            }
+          },
+          {
+            "id": 5,
+            "idServer": "birth_date",
+            "title": "Дата рождения",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "fieldType": 3,
+              "required": true
+            }
+          },
+          {
+            "id": 6,
+            "idServer": "birthplace",
+            "title": "Место рождения",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 7,
+            "idServer": "series",
+            "title": "Серия",
+            "field": {
+              "mask": "[00] [00]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 8,
+            "idServer": "number",
+            "title": "Номер",
+            "field": {
+              "mask": "[000000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 9,
+            "idServer": "department_name",
+            "title": "Паспорт выдан",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 10,
+            "idServer": "issue_date",
+            "title": "Дата выдачи",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 11,
+            "idServer": "department_number",
+            "title": "Код подразделения",
+            "field": {
+              "mask": "[000]-[000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 12,
+            "idServer": "registration_address",
+            "title": "Адрес регистрации",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "idServer": "international_passport",
+        "title": "Загран паспорт",
+        "fields": [
+          {
+            "id": 13,
+            "idServer": "last_name",
+            "title": "Фамилия",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 14,
+            "idServer": "first_name",
+            "title": "Имя",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 15,
+            "idServer": "patronymic",
+            "title": "Отчество",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 2,
+              "required": false
+            }
+          },
+          {
+            "id": 16,
+            "idServer": "last_name_latin",
+            "title": "Фамилия латиницей",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 17,
+            "idServer": "first_name_latin",
+            "title": "Имя латиницей",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 18,
+            "idServer": "birth_date",
+            "title": "Дата рождения",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "fieldType": 3,
+              "required": true
+            }
+          },
+          {
+            "id": 19,
+            "idServer": "sex",
+            "title": "Пол",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [
+                {
+                  "id": "М",
+                  "name": "Мужской"
+                },
+                {
+                  "id": "Ж",
+                  "name": "Женский"
+                }
+              ],
+              "type": 3,
+              "required": true
+            }
+          },
+          {
+            "id": 20,
+            "idServer": "birthplace",
+            "title": "Место рождения",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 21,
+            "idServer": "citizenship",
+            "title": "Гражданство",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 22,
+            "idServer": "series",
+            "title": "Серия",
+            "field": {
+              "mask": "[00]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 23,
+            "idServer": "number",
+            "title": "Номер",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 24,
+            "idServer": "issue_date",
+            "title": "Дата выдачи",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 25,
+            "idServer": "expiration_date",
+            "title": "Дата окончания срока",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 26,
+            "idServer": "department_name",
+            "title": "Орган выдавший",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "idServer": "birth_certificate",
+        "title": "Свидетельство о рождении",
+        "fields": [
+          {
+            "id": 27,
+            "idServer": "last_name",
+            "title": "Фамилия",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 28,
+            "idServer": "first_name",
+            "title": "Имя",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 29,
+            "idServer": "patronymic",
+            "title": "Отчество",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 2,
+              "required": false
+            }
+          },
+          {
+            "id": 30,
+            "idServer": "birth_date",
+            "title": "Дата рождения",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "fieldType": 3,
+              "required": true
+            }
+          },
+          {
+            "id": 31,
+            "idServer": "birthplace",
+            "title": "Место рождения",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 32,
+            "idServer": "act_date",
+            "title": "Дата составления акта",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 33,
+            "idServer": "act_number",
+            "title": "Номер записи акта",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 34,
+            "idServer": "father_last_name",
+            "title": "Отец - Фамилия",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 35,
+            "idServer": "father_first_name",
+            "title": "Отец - Имя",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 36,
+            "idServer": "father_patronymic",
+            "title": "Отец - Отчество",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 37,
+            "idServer": "father_citizenship",
+            "title": "Отец - Гражданство",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 38,
+            "idServer": "mother_last_name",
+            "title": "Мать - Фамилия",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 39,
+            "idServer": "mother_first_name",
+            "title": "Мать - Имя",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 40,
+            "idServer": "mother_patronymic",
+            "title": "Мать - Отчество",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 41,
+            "idServer": "mother_citizenship",
+            "title": "Мать - Гражданство",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 42,
+            "idServer": "act_place",
+            "title": "Место государственной регистрации",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 43,
+            "idServer": "issue_date",
+            "title": "Дата выдачи",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 44,
+            "idServer": "certificate_series",
+            "title": "Серия свидетельства",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 45,
+            "idServer": "certificate_number",
+            "title": "Номер свидетельства",
+            "field": {
+              "mask": "[000000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 1,
+              "required": true
+            }
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "idServer": "military_card",
+        "title": "Военный билет",
+        "fields": [
+          {
+            "id": 46,
+            "idServer": "last_name",
+            "title": "Фамилия",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 47,
+            "idServer": "first_name",
+            "title": "Имя",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 48,
+            "idServer": "patronymic",
+            "title": "Отчество",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 2,
+              "required": false
+            }
+          },
+          {
+            "id": 49,
+            "idServer": "birthday",
+            "title": "Дата рождения",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "fieldType": 3,
+              "required": true
+            }
+          },
+          {
+            "id": 50,
+            "idServer": "series",
+            "title": "Серия",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 51,
+            "idServer": "number",
+            "title": "Номер",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 52,
+            "idServer": "issue_place",
+            "title": "Место выдачи",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 53,
+            "idServer": "issue_date",
+            "title": "Дата выдачи",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 54,
+            "idServer": "issue_rank",
+            "title": "Звание того кто выдал",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 55,
+            "idServer": "assigner",
+            "title": "Кем присвоено",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 56,
+            "idServer": "order_number",
+            "title": "Номер приказа",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 1,
+              "required": false
+            }
+          },
+          {
+            "id": 57,
+            "idServer": "order_date",
+            "title": "Дата приказа",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": false
+            }
+          },
+          {
+            "id": 58,
+            "idServer": "specialty",
+            "title": "Специальность: номер ВУС, Код ВУС, наименование должности",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 59,
+            "idServer": "stock_category",
+            "title": "Категория запаса",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 60,
+            "idServer": "accounting_group",
+            "title": "Группа учета",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 61,
+            "idServer": "structure",
+            "title": "Состав",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 62,
+            "idServer": "med_surveys",
+            "title": "Мед освидетельствования",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "idServer": "pension_certificate",
+        "title": "Пенсионное удостоверение",
+        "fields": [
+          {
+            "id": 63,
+            "idServer": "last_name",
+            "title": "Фамилия",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 64,
+            "idServer": "first_name",
+            "title": "Имя",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 65,
+            "idServer": "patronymic",
+            "title": "Отчество",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 2,
+              "required": false
+            }
+          },
+          {
+            "id": 66,
+            "idServer": "birth_year",
+            "title": "Год рождения",
+            "field": {
+              "mask": "[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 67,
+            "idServer": "number",
+            "title": "Номер",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 68,
+            "idServer": "type",
+            "title": "Тип",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 69,
+            "idServer": "disability_group",
+            "title": "Группа инвалидности",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "icon": "transport",
+    "title": "Транспорт",
+    "description": "Водительское удостоверение, СТС, ПТС, ОСАГО, КАСКО",
+    "listDocuments": [
+      {
+        "id": 6,
+        "idServer": "drivers_license",
+        "title": "Водительское удостоверение",
+        "fields": [
+          {
+            "id": 70,
+            "idServer": "last_name",
+            "title": "Фамилия",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 72,
+            "idServer": "first_name",
+            "title": "Имя",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 74,
+            "idServer": "patronymic",
+            "title": "Отчество",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 2,
+              "required": false
+            }
+          },
+          {
+            "id": 76,
+            "idServer": "birth_date",
+            "title": "Дата рождения",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "fieldType": 3,
+              "required": true
+            }
+          },
+          {
+            "id": 77,
+            "idServer": "birthplace",
+            "title": "Место рождения",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 78,
+            "idServer": "issue_date",
+            "title": "Дата выдачи",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 79,
+            "idServer": "expiration_date",
+            "title": "Дата окончания действия",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 80,
+            "idServer": "department_name",
+            "title": "Подразделение/кем выдано",
+            "field": {
+              "mask": "[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 81,
+            "idServer": "number",
+            "title": "Номер",
+            "field": {
+              "mask": "[00] [00] [000000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 83,
+            "idServer": "category",
+            "title": "Категории",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "idServer": "STS",
+        "title": "Свидетельство о регистрации ТС",
+        "fields": [
+          {
+            "id": 84,
+            "idServer": "last_name",
+            "title": "Фамилия",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "value": "",
+              "type": 0,
+              "fieldType": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 85,
+            "idServer": "last_name_latin",
+            "title": "Фамилия латиницей",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "value": "",
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 86,
+            "idServer": "first_name",
+            "title": "Имя",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "value": "",
+              "type": 0,
+              "fieldType": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 87,
+            "idServer": "first_name_latin",
+            "title": "Имя латиницей",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "value": "",
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 88,
+            "idServer": "patronymic",
+            "title": "Отчество",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "value": "",
+              "type": 0,
+              "fieldType": 2,
+              "required": false
+            }
+          },
+          {
+            "id": 89,
+            "idServer": "registration_address",
+            "title": "Адрес регистрации владельца",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "value": "",
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 90,
+            "idServer": "series",
+            "title": "Серия",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "value": "",
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 91,
+            "idServer": "number",
+            "title": "Номер",
+            "field": {
+              "mask": "[000000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "value": "",
+              "type": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 92,
+            "idServer": "department_name",
+            "title": "Кем выдано",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "value": "",
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 93,
+            "idServer": "issue_date",
+            "title": "Дата выдачи",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "value": "",
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 94,
+            "idServer": "registration_mark",
+            "title": "Регистрационный знак ТС",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "value": "",
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 95,
+            "idServer": "auto_model",
+            "title": "Марка/модель",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "value": "",
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 96,
+            "idServer": "auto_type",
+            "title": "Тип ТС",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "value": "",
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 97,
+            "idServer": "auto_category",
+            "title": "Категория ТС",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "value": "",
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 98,
+            "idServer": "auto_issue_date",
+            "title": "Год выпуска",
+            "field": {
+              "mask": "[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "value": "",
+              "type": 1,
+              "required": false
+            }
+          },
+          {
+            "id": 99,
+            "idServer": "chassis_number",
+            "title": "Номер шасси",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "value": "",
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 100,
+            "idServer": "body_number",
+            "title": "Номер кузова",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "value": "",
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 101,
+            "idServer": "color",
+            "title": "Цвет",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "value": "",
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 102,
+            "idServer": "power",
+            "title": "Мощность",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "value": "",
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 103,
+            "idServer": "environmental_class",
+            "title": "Экологический класс",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "value": "",
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 104,
+            "idServer": "ptc_number",
+            "title": "Серия номер ПТС",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "value": "",
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 105,
+            "idServer": "permitted_weight",
+            "title": "Разрешенная масса",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "value": "",
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 106,
+            "idServer": "weight_without_load",
+            "title": "Масса без нагрузки",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "value": "",
+              "type": 0,
+              "required": false
+            }
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "idServer": "PTC",
+        "title": "Паспорт Транспортного Средства",
+        "fields": [
+          {
+            "id": 107,
+            "idServer": "series",
+            "title": "Серия Номер",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 108,
+            "idServer": "VIN",
+            "title": "VIN",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 109,
+            "idServer": "auto_model",
+            "title": "Марка модель",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 110,
+            "idServer": "auto_type",
+            "title": "Тип ТС",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 111,
+            "idServer": "auto_category",
+            "title": "Категория",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 112,
+            "idServer": "auto_issue_date",
+            "title": "Год выпуска ТС",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 113,
+            "idServer": "engine_number",
+            "title": "Модель и номер двигателя",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 114,
+            "idServer": "chassis_number",
+            "title": "Номер шасси",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 115,
+            "idServer": "body_number",
+            "title": "Номер кузова",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 116,
+            "idServer": "color",
+            "title": "Цвет",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 117,
+            "idServer": "engine_power",
+            "title": "Мощность двигателя л.с. (кВт)",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 118,
+            "idServer": "engine_displacement",
+            "title": "Рабочий объем двигателя",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 119,
+            "idServer": "engine_type",
+            "title": "Тип двигателя",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 120,
+            "idServer": "environmental_class",
+            "title": "Экологический класс",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 121,
+            "idServer": "permitted_weight",
+            "title": "Разрешенная масса",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 122,
+            "idServer": "weight_without_load",
+            "title": "Масса без нагрузки",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 123,
+            "idServer": "auto_manufacturer",
+            "title": "Изготовитель ТС",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 124,
+            "idServer": "type_approval_number",
+            "title": "Одобрение типа Номер",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 125,
+            "idServer": "type_approval_date",
+            "title": "Одобрение типа дата",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 126,
+            "idServer": "type_approval_department",
+            "title": "Одобрение типа орган",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 127,
+            "idServer": "export_country",
+            "title": "Страна вывоза",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 128,
+            "idServer": "TD_TPO_series",
+            "title": "Серия ТД ТПО",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 129,
+            "idServer": "TD_TPO_number",
+            "title": "Номер ТД ТПО",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 130,
+            "idServer": "customs_restrictions",
+            "title": "Таможенные ограничения",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "idServer": "OSAGO",
+        "title": "Полис ОСАГО",
+        "fields": [
+          {
+            "id": 131,
+            "idServer": "series",
+            "title": "Серия Номер",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 132,
+            "idServer": "insurance_amount",
+            "title": "Страховая сумма",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 1,
+              "required": false
+            }
+          },
+          {
+            "id": 133,
+            "idServer": "issue_date",
+            "title": "Действителен с….",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 134,
+            "idServer": "expiration_date",
+            "title": "Действителен до…",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 135,
+            "idServer": "insurance_company_name",
+            "title": "Название страховой компании",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 136,
+            "idServer": "insurance_company_address",
+            "title": "Адрес страховой компании",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "idServer": "KASKO",
+        "title": "Полис КАСКО",
+        "fields": [
+          {
+            "id": 137,
+            "idServer": "series",
+            "title": "Серия Номер",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 138,
+            "idServer": "issue_date",
+            "title": "Срок действия с …",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 139,
+            "idServer": "expiration_date",
+            "title": "Срок действия до…",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 140,
+            "idServer": "insurance_company",
+            "title": "Страховая компания",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 141,
+            "idServer": "insurance_amount",
+            "title": "Страховая премия",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 142,
+            "idServer": "driver_count",
+            "title": "Число водителей",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 1,
+              "required": false
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "icon": "state",
+    "title": "Государство",
+    "description": "СНИЛС, ИНН",
+    "listDocuments": [
+      {
+        "id": 11,
+        "idServer": "INN",
+        "title": "ИНН",
+        "fields": [
+          {
+            "id": 149,
+            "idServer": "number",
+            "title": "Номер",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 1,
+              "required": true
+            }
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "idServer": "snils",
+        "title": "СНИЛС",
+        "fields": [
+          {
+            "id": 157,
+            "idServer": "number",
+            "title": "Номер",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 1,
+              "required": true
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "icon": "family",
+    "title": "Свидетельства",
+    "description": "Свидетельство о браке, разводе, усыновлении",
+    "listDocuments": [
+      {
+        "id": 13,
+        "idServer": "marriage_certificate",
+        "title": "Свидетельство о браке",
+        "fields": [
+          {
+            "id": 158,
+            "idServer": "husband_last_name",
+            "title": "Фамилия мужа",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 159,
+            "idServer": "husband_first_name",
+            "title": "Имя мужа",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 160,
+            "idServer": "husband_patronymic",
+            "title": "Отчество мужа",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 161,
+            "idServer": "husband_citizenship",
+            "title": "Гражданство мужа",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 162,
+            "idServer": "husband_birthdate",
+            "title": "Дата рождения мужа",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 163,
+            "idServer": "husband_birthplace",
+            "title": "Место рождения мужа",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 164,
+            "idServer": "wife_last_name",
+            "title": "Фамилия жены",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 165,
+            "idServer": "wife_first_name",
+            "title": "Имя жены",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 166,
+            "idServer": "wife_patronymic",
+            "title": "Отчество жены",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 167,
+            "idServer": "wife_citizenship",
+            "title": "Гражданство жены",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 168,
+            "idServer": "wife_birthdate",
+            "title": "Дата рождения жены",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 169,
+            "idServer": "wife_birthplace",
+            "title": "Место рождения жены",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 170,
+            "idServer": "marriage_date",
+            "title": "Дата заключения брака",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 171,
+            "idServer": "act_date",
+            "title": "Дата записи акта",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 172,
+            "idServer": "act_number",
+            "title": "Номер записи акта",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 173,
+            "idServer": "new_husband_last_name",
+            "title": "Новая фамилия мужа",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 174,
+            "idServer": "new_wife_last_name",
+            "title": "Новая фамилия жены",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 175,
+            "idServer": "registration_place",
+            "title": "Место гос регистрации",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 176,
+            "idServer": "issue_date",
+            "title": "Дата выдачи",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 177,
+            "idServer": "series",
+            "title": "Серия Номер",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "idServer": "divorce_certificate",
+        "title": "Свидетельство о разводе",
+        "fields": [
+          {
+            "id": 178,
+            "idServer": "husband_last_name",
+            "title": "Фамилия мужа",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 179,
+            "idServer": "husband_first_name",
+            "title": "Имя мужа",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 180,
+            "idServer": "husband_patronymic",
+            "title": "Отчество мужа",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 181,
+            "idServer": "husband_citizenship",
+            "title": "Гражданство мужа",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 182,
+            "idServer": "husband_birthdate",
+            "title": "Дата рождения мужа",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 183,
+            "idServer": "husband_birthplace",
+            "title": "Место рождения мужа",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 184,
+            "idServer": "wife_last_name",
+            "title": "Фамилия жены",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 185,
+            "idServer": "wife_first_name",
+            "title": "Имя жены",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 186,
+            "idServer": "wife_patronymic",
+            "title": "Отчество жены",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 187,
+            "idServer": "wife_citizenship",
+            "title": "Гражданство жены",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 188,
+            "idServer": "wife_birthdate",
+            "title": "Дата рождения жены",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 189,
+            "idServer": "wife_birthplace",
+            "title": "Место рождения жены",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 190,
+            "idServer": "divorce_date",
+            "title": "Дата развода",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 191,
+            "idServer": "reason",
+            "title": "Основание",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 192,
+            "idServer": "date_reason",
+            "title": "Дата основания",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": false
+            }
+          },
+          {
+            "id": 193,
+            "idServer": "act_date",
+            "title": "Дата записи акта",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 194,
+            "idServer": "act_number",
+            "title": "Номер записи акта",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 195,
+            "idServer": "new_last_name",
+            "title": "Новая фамилия",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 196,
+            "idServer": "applicant_last_name",
+            "title": "Фамилия заявителя",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 197,
+            "idServer": "applicant_first_name",
+            "title": "Имя заявителя",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 198,
+            "idServer": "applicant_patronymic",
+            "title": "Отчество заявителя",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 199,
+            "idServer": "registration_place",
+            "title": "Место гос регистрации",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 200,
+            "idServer": "issue_date",
+            "title": "Дата выдачи",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 201,
+            "idServer": "series",
+            "title": "Серия Номер",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "idServer": "adoption_certificate",
+        "title": "Свидетельство об усыновлении",
+        "fields": [
+          {
+            "id": 202,
+            "idServer": "child_last_name",
+            "title": "Фамилия ребёнка",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 203,
+            "idServer": "child_first_name",
+            "title": "Имя ребёнка",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 204,
+            "idServer": "child_patronymic",
+            "title": "Отчество ребёнка",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 205,
+            "idServer": "child_birthdate",
+            "title": "Дата рождения ребёнка",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 206,
+            "idServer": "child_birthplace",
+            "title": "Место рождения ребёнка",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 207,
+            "idServer": "husband_last_name",
+            "title": "Фамилия мужа",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 208,
+            "idServer": "husband_first_name",
+            "title": "Имя мужа",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 209,
+            "idServer": "husband_patronymic",
+            "title": "Отчество мужа",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 210,
+            "idServer": "husband_citizenship",
+            "title": "Гражданство мужа",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 211,
+            "idServer": "wife_last_name",
+            "title": "Фамилия жены",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 212,
+            "idServer": "wife_first_name",
+            "title": "Имя жены",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 213,
+            "idServer": "wife_patronymic",
+            "title": "Отчество жены",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 214,
+            "idServer": "wife_citizenship",
+            "title": "Гражданство жены",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 215,
+            "idServer": "new_child_last_name",
+            "title": "Новая Фамилия ребёнка",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 220,
+            "idServer": "act_date",
+            "title": "Дата записи акта",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 221,
+            "idServer": "act_number",
+            "title": "Номер записи акта",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 222,
+            "idServer": "registration_place",
+            "title": "Место гос регистрации",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 223,
+            "idServer": "issue_date",
+            "title": "Дата выдачи",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 224,
+            "idServer": "series",
+            "title": "Серия Номер",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "icon": "medicine",
+    "title": "Здоровье",
+    "description": "ОМС, ДМС",
+    "listDocuments": [
+      {
+        "id": 16,
+        "idServer": "OMC_policy",
+        "title": "Полис ОМС",
+        "fields": [
+          {
+            "id": 230,
+            "idServer": "policy_number",
+            "title": "Номер полиса",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 231,
+            "idServer": "validity",
+            "title": "Срок действия",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 232,
+            "idServer": "registration_date",
+            "title": "Дата регистрации",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": false
+            }
+          },
+          {
+            "id": 233,
+            "idServer": "insurance_company_name",
+            "title": "Название страховой организации",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 234,
+            "idServer": "insurance_company_address",
+            "title": "Адрес организации",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 235,
+            "idServer": "insurance_company_phone",
+            "title": "Телефон организации",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 236,
+            "idServer": "representative_name",
+            "title": "ФИО представителя",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "idServer": "DMC_policy",
+        "title": "Полис ДМС",
+        "fields": [
+          {
+            "id": 237,
+            "idServer": "policy_number",
+            "title": "Номер полиса",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 238,
+            "idServer": "validity",
+            "title": "Срок действия",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 239,
+            "idServer": "insurance_company",
+            "title": "Страховая компания",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "idServer": "disability_certificate",
+        "title": "Справка об инвалидности",
+        "fields": [
+          {
+            "id": 240,
+            "idServer": "department_name",
+            "title": "Наименование организации",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 241,
+            "idServer": "certificate_number",
+            "title": "Серия Номер справки",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 242,
+            "idServer": "last_name",
+            "title": "Фамилия",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 243,
+            "idServer": "first_name",
+            "title": "Имя",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 244,
+            "idServer": "patronymic",
+            "title": "Отчество",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 2,
+              "required": false
+            }
+          },
+          {
+            "id": 245,
+            "idServer": "birth_date",
+            "title": "Дата рождения",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "fieldType": 3,
+              "required": true
+            }
+          },
+          {
+            "id": 246,
+            "idServer": "registration_address",
+            "title": "Адрес регистрации",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 247,
+            "idServer": "disability_establishment_date",
+            "title": "Дата установления инвалидности",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "icon": "oxota",
+    "title": "Охота",
+    "description": "Лицензия на оружие, разрешение РОХа, охотничий билет",
+    "listDocuments": [
+      {
+        "id": 19,
+        "idServer": "weapon_license",
+        "title": "Лицензия на оружие",
+        "fields": [
+          {
+            "id": 248,
+            "idServer": "model",
+            "title": "Модель",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 249,
+            "idServer": "caliber",
+            "title": "Калибр",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 250,
+            "idServer": "series",
+            "title": "Серия",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 251,
+            "idServer": "number",
+            "title": "Номер",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 252,
+            "idServer": "release_date",
+            "title": "Год выпуска",
+            "field": {
+              "mask": "[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 253,
+            "idServer": "issue_date",
+            "title": "Дата выдачи",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 254,
+            "idServer": "expiration_date",
+            "title": "Действительно до…",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 255,
+            "idServer": "department_name",
+            "title": "Кем выдано",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "idServer": "hunting_ticket",
+        "title": "Охотничий билет",
+        "fields": [
+          {
+            "id": 278,
+            "idServer": "series",
+            "title": "Серия",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 256,
+            "idServer": "number",
+            "title": "Номер",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 257,
+            "idServer": "last_name",
+            "title": "Фамилия",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 258,
+            "idServer": "first_name",
+            "title": "Имя",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 259,
+            "idServer": "patronymic",
+            "title": "Отчество",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 2,
+              "required": false
+            }
+          },
+          {
+            "id": 260,
+            "idServer": "birth_date",
+            "title": "Дата рождения",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "fieldType": 3,
+              "required": true
+            }
+          },
+          {
+            "id": 261,
+            "idServer": "department_name",
+            "title": "Кем выдан",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 262,
+            "idServer": "issue_date",
+            "title": "Дата выдачи",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "idServer": "ROH_license",
+        "title": "Разрешение РОХа",
+        "fields": [
+          {
+            "id": 263,
+            "idServer": "number",
+            "title": "Номер",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 264,
+            "idServer": "last_name",
+            "title": "Фамилия",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 265,
+            "idServer": "first_name",
+            "title": "Имя",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 266,
+            "idServer": "patronymic",
+            "title": "Отчество",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 2,
+              "required": false
+            }
+          },
+          {
+            "id": 267,
+            "idServer": "sex",
+            "title": "Пол",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [
+                {
+                  "id": "М",
+                  "name": "Мужской"
+                },
+                {
+                  "id": "Ж",
+                  "name": "Женский"
+                }
+              ],
+              "type": 3,
+              "required": true
+            }
+          },
+          {
+            "id": 268,
+            "idServer": "registration_place",
+            "title": "Место регистрации",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 279,
+            "idServer": "model",
+            "title": "Модель",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 280,
+            "idServer": "caliber",
+            "title": "Калибр",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 281,
+            "idServer": "series",
+            "title": "Серия",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 282,
+            "idServer": "number",
+            "title": "Номер",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 283,
+            "idServer": "release_date",
+            "title": "Год выпуска",
+            "field": {
+              "mask": "[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 284,
+            "idServer": "issue_date",
+            "title": "Дата выдачи",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 285,
+            "idServer": "expiration_date",
+            "title": "Действительно до…",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 286,
+            "idServer": "department_name",
+            "title": "Кем выдано",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "icon": "default",
+    "title": "Прочее",
+    "description": "Диплом, фотокопии",
+    "listDocuments": [
+      {
+        "id": 22,
+        "idServer": "photo",
+        "title": "Хранилище фотографий",
+        "fields": []
+      },
+      {
+        "id": 23,
+        "idServer": "social",
+        "title": "Контакты",
+        "fields": [
+          {
+            "id": 269,
+            "idServer": "instagram",
+            "title": "Инстаграм",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 270,
+            "idServer": "VK",
+            "title": "Вконтакте",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 271,
+            "idServer": "twitter",
+            "title": "Твиттер",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 272,
+            "idServer": "odnoklassniki",
+            "title": "Одноклассники",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 273,
+            "idServer": "facebook",
+            "title": "Фейсбук",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 274,
+            "idServer": "email",
+            "title": "E-Mail",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 275,
+            "idServer": "phone_number",
+            "title": "Телефон",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 276,
+            "idServer": "whatsapp",
+            "title": "Ватсапп",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "idServer": "actual_address",
+        "title": "Фактический адрес проживания",
+        "fields": [
+          {
+            "id": 277,
+            "idServer": "actual_address",
+            "title": "Фактический адрес проживания",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "idServer": "education_document",
+        "title": "Документ об образовании",
+        "fields": [
+          {
+            "id": 287,
+            "idServer": "name_education_document",
+            "title": "Наименование документа об образовании",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 288,
+            "idServer": "last_name",
+            "title": "Фамилия",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 289,
+            "idServer": "first_name",
+            "title": "Имя",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 290,
+            "idServer": "patronymic",
+            "title": "Отчество",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "fieldType": 2,
+              "required": false
+            }
+          },
+          {
+            "id": 291,
+            "idServer": "series",
+            "title": "Серия",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 292,
+            "idServer": "number",
+            "title": "Номер",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 1,
+              "required": true
+            }
+          },
+          {
+            "id": 293,
+            "idServer": "department_name",
+            "title": "Кем выдано",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 294,
+            "idServer": "issue_date",
+            "title": "Дата выдачи",
+            "field": {
+              "mask": "[00].[00].[0000]",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 4,
+              "required": true
+            }
+          },
+          {
+            "id": 295,
+            "idServer": "registration_number",
+            "title": "Регистрационный номер",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": true
+            }
+          },
+          {
+            "id": 296,
+            "idServer": "qualification",
+            "title": "Квалификация",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          },
+          {
+            "id": 297,
+            "idServer": "specialty",
+            "title": "Специальность",
+            "field": {
+              "mask": "",
+              "regex": "",
+              "isValid": false,
+              "options": [],
+              "type": 0,
+              "required": false
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

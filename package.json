@@ -1,0 +1,23 @@
+{
+  "name": "@time-is-money/frontend-module",
+  "version": "1.0.0",
+  "keywords": [
+    "TiM",
+    "integration",
+    "plugin",
+    "module"
+  ],
+  "description": "Plugin for integration with TiM app.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npx babel src/index.js --out-file dist/index.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.24.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.23.3"
+  },
+  "repository": "https://github.com/time-is-money-ru/frontend-module",
+  "author": "TiM teams",
+  "license": "ISC"
+}
