@@ -18,11 +18,11 @@ function App() {
     });
 
     timClient.getDocuments(['passport', "INN"])
-      .then(data => {
+      .then(documents => {
         setUserData({
-          lastName: data?.passport?.last_name || userData.lastName,
-          firstName: data?.passport?.first_name || userData.firstName,
-          inn: data?.INN?.number || userData.inn,
+          lastName: documents.get('passport', 'last_name') || userData.lastName,
+          firstName: documents.get('passport', 'first_name') || userData.firstName,
+          inn: documents.get('INN', 'number') || userData.inn,
         })
       })
       .catch(err => {

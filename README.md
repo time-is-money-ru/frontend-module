@@ -33,56 +33,87 @@ const clickTimButtonHandler = async () => {
 ```
 
 
-## Пример использование
-Создайте клиент и передайте в конструктор параметры вашего плагина. Эти параметры можно найти на сайте в личном кабинете.
+## Использование
+### Инициализация клиента
+#### Автоматическое подключение
+Если вы хотите, чтоб данные плагина подставлялись автоматически: создайте объект клиента и передайте в конструктор параметры вашего плагина. Эти параметры можно найти на сайте в личном кабинете.
 ```js
 const timClient = new tim.Client({
   id: 0,
   secret: "00000000-0000-0000-0000-000000000000",
 });
 ```
+---
+#### Ручной ввод
+Если вы хотите чтобы пользователь(сотрудник) сам вводил параметры клиента, необходимо создать объект клиента без параметров.
+Для сотрудника
+Шаг 1. Создайте клиент.
+```js
+const timClient = new tim.Client();
+```
+___
+### Получение данных из приложения
+Для получения данных любым способом вам понадобится названия документов их полей.
+Актуальный список можно посмотреть [здесь](./documents.md).
 
-Вызовите функцию getDocuments() и передайте необходимый список документов.
-Актуальный список документов можно посмотреть [здесь](./documents.md).
+Чтобы получить объект с списком документов и их полей вызовите функцию ```getDocuments()```
+и передайте необходимые из них.
 Клиент сам отобразит интерфейс ТиМ и выполнит все взаимодействия с пользователем.
-После завершения вам вернется объект с данными документов или ошибка.
+После завершения вам вернется объект с данными документов или ошибка. 
+Используйте функцию `get(string documentName, string fieldName)` для получения нужного значения.
 ```js
 timClient.getDocuments(['passport', "INN"])
   .then(data => {
     // присваиваем полям значение из ответа
-    document.getElementById('firstName').value = data?.passport?.first_name
-    document.getElementById('inn').value = data?.INN?.number
+    document.getElementById('firstName').value = documents.get('passport', 'first_name')
+    document.getElementById('lastName').value = documents.get('passport', 'last_name')
+    document.getElementById('secondName').value = documents.get('passport', 'patronymic')
+    document.getElementById('inn').value = documents.get('INN', 'number')
   })
   .catch(err => {
     err && alert(err) // если пользователь закрое окно ТиМ. Вернется err === null
   })
 ```
-Пример результата ```getDocuments(['passport', "INN"])```
-```json
-{
-  "passport": {
-    "series": "2385",
-    "number": "658927",
-    "last_name": "Летов",
-    "first_name": "Егор",
-    "patronymic": "Федорович",
-    "birth_date": "1964-09-10",
-    "sex": "Мужской",
-    "birthplace": "Омск, город Омск, Омская область",
-    "department_name": "Мвд города Омск",
-    "issue_date": "1975-06-01",
-    "department_number": "333-000",
-    "registration_address": "Омск, улица Ленина, 22"
-  },
-  "INN": {
-    "number": "122356789865004835000"
-  }
-}
+> для избежания проблем с виртуальным DOM, способ описанный выше является рекомендуемым вариантом.
+---
+#### Автоматическая вставка данных
+Плагин поддерживает автоматическую вставку в поля формы.
+Для этого вставьте в поле атрибут ```data-tim```. Значение должно быть в формате
+`<название документа>.<название поля>`.
+Пример:
+```html
+<form id="exampleForm">
+  <label for="firstName">Имя</label>
+  <input name="firstName" id="firstName" data-tim="passport.first_name"/>
+</form>
 ```
-**Внимание!** В ответе будут только объекты документов, которые заполнены у пользователя. Это значит, что если
-в приложении Tim у пользователя не заполнены, например, паспортные данные, то ``getDocuments(['passport])`` вернет пустой объект.
+Дале в JS выполните
+```js
+const formElement = document.getElementById('exampleForm') // элемент в котором будут искаться атрибуты
+timClient = new tim.Client(); // допустим любой способ инициализации
+tim.insertByAttributes(timClient, formElement)
+```
+код самостоятельно найдет внутри formElement все указанные в атрибутах документы,
+запросит данные и вставит их в поля формы.
+___
+Вы можете изменить название аттрибута.
 
-# Примеры
+```html
+<form id="exampleForm">
+  <label for="firstName">Имя</label>
+  <input name="firstName" id="firstName" my-custom-attr="passport.first_name"/>
+</form>
+```
+Для этого при вызове ```insertByAttributes```, укажите третьим параметром, 
+название аттрибута:
+```js
+tim.insertByAttributes(timClient, formElement, 'my-custom-attr')
+```
+
+## Примеры
 - [простое приложение](./example/simple/).
 - [на React](./example/react/).
 - [на Vue](./example/vue/).
+
+## Документы и поля
+Актуальная версия названия документов и полей [здесь](./documents.md).
