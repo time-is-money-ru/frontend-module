@@ -9,10 +9,12 @@ const addScriptPromise = new Promise(function (resolve, reject) {
 
 /**
  * @returns {Promise<{
- *   Client: function(credentials: {
+ *   Client: function(options: {
  *   id: number,
- *   secret: string
- * }, ui?: object|null): {
+ *   secret: string,
+ *   isShowQrCode?: bool,
+ *   ui?: object|null,
+ * }): {
  *   getDocuments: function(documentTypes: Array<string>): Promise<{
  *   possport: {
  *    last_name: string,
